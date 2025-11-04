@@ -1,14 +1,14 @@
 {
     "ios": {
-      "minimumVersion": "1.0.9",
-      "currentVersion": "1.0.9",
+      "minimumVersion": "1.10.0",
+      "currentVersion": "1.10.0",
       "updateUrl": "https://apps.apple.com/app/yasay/id123456789",
       "forceUpdate": true,
       "updateMessage": "A new version is available with important features updates."
     },
     "android": {
-      "minimumVersion": "1.0.9",
-      "currentVersion": "1.0.9",
+      "minimumVersion": "1.10.0",
+      "currentVersion": "1.10.0",
       "updateUrl": "https://play.google.com/store/apps/details?id=io.yasay.app",
       "forceUpdate": true,
       "updateMessage": "A new version is available with important features updates."
