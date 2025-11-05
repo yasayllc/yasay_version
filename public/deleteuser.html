@@ -1,3 +1,6 @@
+<!-- 
+  Updated: Enhanced modern, user-friendly design with smooth animations, better UX, and polished interactions
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,57 +8,497 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Delete my YaSay account</title>
   <style>
-    body { font-family: system-ui, sans-serif; padding: 20px; max-width: 600px; margin: auto; line-height: 1.6; }
-    h1 { color: #1a73e8; }
-    input, button { padding: 10px; margin: 8px 0; font-size: 16px; }
-    input { width: 100%; box-sizing: border-box; }
-    button { background: #1a73e8; color: white; border: none; cursor: pointer; border-radius: 4px; }
-    button:hover { background: #1557b0; }
-    .success { color: green; font-weight: bold; }
-    .error { color: red; }
-    ol { background: #f8f9fa; padding: 15px 20px; border-radius: 8px; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      background-size: 200% 200%;
+      animation: gradientShift 15s ease infinite;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      line-height: 1.6;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(20px);
+      border-radius: 24px;
+      box-shadow: 
+        0 20px 60px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+      max-width: 520px;
+      width: 100%;
+      padding: 48px 40px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      animation: slideUp 0.6s ease-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container:hover {
+      transform: translateY(-2px);
+      box-shadow: 
+        0 25px 70px rgba(0, 0, 0, 0.2),
+        0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+    }
+
+    .logo-container {
+      margin-bottom: 32px;
+      animation: fadeIn 0.8s ease-out 0.2s both;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .logo {
+      width: 90px;
+      height: 90px;
+      margin: 0 auto 24px;
+      display: block;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.1));
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05) rotate(2deg);
+    }
+
+    h1 {
+      color: #1a202c;
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.8px;
+      line-height: 1.2;
+      animation: fadeIn 0.8s ease-out 0.3s both;
+    }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 16px;
+      margin-bottom: 32px;
+      line-height: 1.6;
+      animation: fadeIn 0.8s ease-out 0.4s both;
+    }
+
+    .warning-box {
+      background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+      border: 1px solid #fecaca;
+      border-left: 4px solid #ef4444;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 32px;
+      text-align: left;
+      animation: fadeIn 0.8s ease-out 0.5s both;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .warning-box:hover {
+      transform: translateX(4px);
+      box-shadow: -4px 0 12px rgba(239, 68, 68, 0.2);
+    }
+
+    .warning-box strong {
+      color: #dc2626;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .warning-box p {
+      color: #991b1b;
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .warning-icon {
+      font-size: 18px;
+    }
+
+    form {
+      text-align: left;
+      animation: fadeIn 0.8s ease-out 0.6s both;
+    }
+
+    label {
+      display: block;
+      color: #1e293b;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+    }
+
+    .input-wrapper {
+      position: relative;
+      margin-bottom: 24px;
+    }
+
+    input {
+      width: 100%;
+      padding: 16px 18px;
+      font-size: 16px;
+      border: 2px solid #e2e8f0;
+      border-radius: 12px;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      font-family: inherit;
+      background: #ffffff;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #667eea;
+      box-shadow: 
+        0 0 0 4px rgba(102, 126, 234, 0.1),
+        0 4px 12px rgba(102, 126, 234, 0.15);
+      transform: translateY(-1px);
+    }
+
+    input:valid:not(:placeholder-shown) {
+      border-color: #10b981;
+    }
+
+    input::placeholder {
+      color: #94a3b8;
+      font-weight: 400;
+    }
+
+    button {
+      width: 100%;
+      padding: 18px;
+      font-size: 17px;
+      font-weight: 600;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 
+        0 4px 14px rgba(102, 126, 234, 0.4),
+        0 0 0 0 rgba(102, 126, 234, 0);
+      font-family: inherit;
+      letter-spacing: -0.2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+
+    button:hover::before {
+      width: 300px;
+      height: 300px;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 
+        0 8px 25px rgba(102, 126, 234, 0.5),
+        0 0 0 0 rgba(102, 126, 234, 0);
+    }
+
+    button:active {
+      transform: translateY(-1px);
+      box-shadow: 
+        0 4px 14px rgba(102, 126, 234, 0.4),
+        0 0 0 0 rgba(102, 126, 234, 0);
+    }
+
+    button:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.2);
+    }
+
+    button span {
+      position: relative;
+      z-index: 1;
+    }
+
+    #status {
+      margin-top: 24px;
+      min-height: 24px;
+      text-align: center;
+      animation: fadeIn 0.4s ease-out;
+    }
+
+    .success {
+      color: #059669;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+      border-radius: 12px;
+      border: 1px solid #86efac;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(16, 185, 129, 0.15);
+      animation: slideIn 0.4s ease-out;
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .error {
+      color: #dc2626;
+      font-weight: 600;
+      font-size: 15px;
+      padding: 16px 20px;
+      background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+      border-radius: 12px;
+      border: 1px solid #fca5a5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      box-shadow: 0 4px 12px rgba(239, 68, 68, 0.15);
+      animation: slideIn 0.4s ease-out;
+    }
+
+    .loading {
+      color: #667eea;
+      font-weight: 500;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(102, 126, 234, 0.2);
+      border-top-color: #667eea;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .success-icon, .error-icon {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 36px 24px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .logo {
+        width: 70px;
+        height: 70px;
+      }
+
+      button {
+        padding: 16px;
+        font-size: 16px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="/icon.png" alt="YaSay Logo" class="logo" onerror="this.style.display='none'">
+    </div>
 
-  <h1>Delete your YaSay account</h1>
-  <p>All your posts, comments, email, and personal data will be <strong>permanently deleted</strong>.</p>
+    <h1>Delete your YaSay account</h1>
+    <p class="subtitle">We're sorry to see you go. Your account deletion request will be processed within 24 hours.</p>
 
-  <!-- Email Collection + Google Sheet -->
-  <form id="deleteForm">
-    <label><strong>Enter your registered email:</strong></label>
-    <input type="email" id="email" placeholder="you@example.com" required />
-    <button type="submit">Send Deletion Request</button>
-  </form>
+    <div class="warning-box">
+      <strong>
+        <span class="warning-icon">⚠️</span>
+        <span>Permanent Action</span>
+      </strong>
+      <p>All your posts, comments, email, and personal data will be permanently deleted and cannot be recovered.</p>
+    </div>
 
-  <div id="status"></div>
+    <form id="deleteForm">
+      <label for="email">Enter your registered email address</label>
+      <div class="input-wrapper">
+        <input 
+          type="email" 
+          id="email" 
+          placeholder="you@example.com" 
+          required 
+          autocomplete="email"
+          aria-label="Email address"
+        />
+      </div>
+      <button type="submit" id="submitBtn">
+        <span>Send Deletion Request</span>
+      </button>
+    </form>
 
-  <!-- Google Apps Script Web App URL (YOU MUST REPLACE THIS) -->
+    <div id="status" role="status" aria-live="polite"></div>
+  </div>
+
   <script>
     const FORM_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // ← CHANGE THIS
 
-    document.getElementById("deleteForm").addEventListener("submit", async (e) => {
+    const form = document.getElementById("deleteForm");
+    const emailInput = document.getElementById("email");
+    const submitBtn = document.getElementById("submitBtn");
+    const status = document.getElementById("status");
+
+    // Add input validation feedback
+    emailInput.addEventListener('input', function() {
+      if (this.validity.valid) {
+        this.style.borderColor = '#10b981';
+      } else if (this.value.length > 0) {
+        this.style.borderColor = '#ef4444';
+      } else {
+        this.style.borderColor = '#e2e8f0';
+      }
+    });
+
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = document.getElementById("email").value.trim();
-      const status = document.getElementById("status");
+      const email = emailInput.value.trim();
 
-      if (!email) return;
+      if (!email || !emailInput.validity.valid) {
+        emailInput.focus();
+        emailInput.style.borderColor = '#ef4444';
+        return;
+      }
 
-      status.innerHTML = "Sending...";
+      // Disable button and show loading
+      submitBtn.disabled = true;
+      submitBtn.querySelector('span').textContent = "Sending...";
+      status.innerHTML = '<p class="loading"><span class="spinner"></span>Processing your request...</p>';
 
       try {
         const res = await fetch(FORM_URL, {
           method: "POST",
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ email, action: "request_delete", timestamp: new Date().toISOString() })
+          body: JSON.stringify({ 
+            email, 
+            action: "request_delete", 
+            timestamp: new Date().toISOString() 
+          })
         });
 
         // Success (no-cors = no response, but it works)
-        status.innerHTML = `<p class="success">Request sent! We'll process your deletion within 24 hours.</p>`;
-        document.getElementById("email").value = "";
+        status.innerHTML = `
+          <p class="success">
+            <span class="success-icon">✓</span>
+            <span>Request sent successfully! We'll process your deletion within 24 hours.</span>
+          </p>
+        `;
+        emailInput.value = "";
+        emailInput.style.borderColor = '#e2e8f0';
+        submitBtn.querySelector('span').textContent = "Request Sent ✓";
+        
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          submitBtn.disabled = false;
+          submitBtn.querySelector('span').textContent = "Send Deletion Request";
+          status.innerHTML = '';
+        }, 5000);
       } catch (err) {
-        status.innerHTML = `<p class="error">Failed. Try again or email support@yasay.app</p>`;
+        status.innerHTML = `
+          <p class="error">
+            <span class="error-icon">✕</span>
+            <span>Failed to send request. Please try again or email support@yasay.app</span>
+          </p>
+        `;
+        submitBtn.disabled = false;
+        submitBtn.querySelector('span').textContent = "Send Deletion Request";
       }
     });
   </script>
