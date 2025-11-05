@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delete my YaSay account</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 20px; max-width: 600px; margin: auto; line-height: 1.6; }
+    h1 { color: #1a73e8; }
+    input, button { padding: 10px; margin: 8px 0; font-size: 16px; }
+    input { width: 100%; box-sizing: border-box; }
+    button { background: #1a73e8; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    button:hover { background: #1557b0; }
+    .success { color: green; font-weight: bold; }
+    .error { color: red; }
+    ol { background: #f8f9fa; padding: 15px 20px; border-radius: 8px; }
+  </style>
+</head>
+<body>
+
+  <h1>Delete your YaSay account</h1>
+  <p>All your posts, comments, email, and personal data will be <strong>permanently deleted</strong>.</p>
+
+  <!-- Email Collection + Google Sheet -->
+  <form id="deleteForm">
+    <label><strong>Enter your registered email:</strong></label>
+    <input type="email" id="email" placeholder="you@example.com" required />
+    <button type="submit">Send Deletion Request</button>
+  </form>
+
+  <div id="status"></div>
+
+  <!-- Google Apps Script Web App URL (YOU MUST REPLACE THIS) -->
+  <script>
+    const FORM_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // ← CHANGE THIS
+
+    document.getElementById("deleteForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const email = document.getElementById("email").value.trim();
+      const status = document.getElementById("status");
+
+      if (!email) return;
+
+      status.innerHTML = "Sending...";
+
+      try {
+        const res = await fetch(FORM_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email, action: "request_delete", timestamp: new Date().toISOString() })
+        });
+
+        // Success (no-cors = no response, but it works)
+        status.innerHTML = `<p class="success">Request sent! We'll process your deletion within 24 hours.</p>`;
+        document.getElementById("email").value = "";
+      } catch (err) {
+        status.innerHTML = `<p class="error">Failed. Try again or email support@yasay.app</p>`;
+      }
+    });
+  </script>
+</body>
+</html>
