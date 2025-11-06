@@ -570,7 +570,17 @@
 
     // Handle final confirmation
     confirmDeleteBtn.addEventListener('click', async () => {
-      if (!pendingEmail) return;
+      // Get email from pendingEmail or fallback to input field
+      const email = pendingEmail || emailInput.value.trim();
+      
+      if (!email) {
+        status.innerHTML = `
+          <div class="status-message status-error">
+            Email is required. Please try again.
+          </div>
+        `;
+        return;
+      }
 
       // Close modal
       closeModal();
@@ -588,15 +598,17 @@
       `;
 
       try {
+        const payload = {
+          email: email,
+          timestamp: new Date().toISOString(),
+          status: 'Pending'
+        };
+        
         await fetch(FORM_URL, {
           method: "POST",
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ 
-            email: pendingEmail,
-            timestamp: new Date().toISOString(),
-            status: 'Pending'
-          })
+          body: JSON.stringify(payload)
         });
 
         // Success
