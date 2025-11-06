@@ -1,5 +1,6 @@
 <!-- 
   Updated: Added confirmation modal requiring users to confirm before account deletion
+  Configured with Google Apps Script Web App URL for data submission
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -499,7 +500,7 @@
   </div>
 
   <script>
-    const FORM_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"; // ← CHANGE THIS
+    const FORM_URL = "https://script.google.com/macros/s/AKfycbxLqKz1RYbGa0i9pM3ZOVLJLDdCmzTNXb3DPL7Zdhz8pp5IslPINpb-gVmOVDgmuCB_/exec";
 
     const form = document.getElementById("deleteForm");
     const emailInput = document.getElementById("email");
@@ -592,9 +593,9 @@
           mode: "no-cors",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ 
-            email: pendingEmail, 
-            action: "request_delete", 
-            timestamp: new Date().toISOString() 
+            email: pendingEmail,
+            timestamp: new Date().toISOString(),
+            status: 'Pending'
           })
         });
 
