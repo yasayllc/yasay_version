@@ -1,16 +1,16 @@
-# Privacy Policy for WeatherVista
+# Privacy Policy for SkyVista
 
 **Last Updated:** January 2025
 
 ## Introduction
 
-WeatherVista ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use our mobile application WeatherVista (the "App").
+SkyVista ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard information when you use our mobile application SkyVista (the "App").
 
 ## Information We Collect
 
 ### User Preferences (Stored Locally)
 
-WeatherVista stores the following preferences locally on your device:
+SkyVista stores the following preferences locally on your device:
 
 - **Favorite Cities**: Cities you have marked as favorites
 - **Home City**: Your selected home city preference
@@ -20,7 +20,7 @@ WeatherVista stores the following preferences locally on your device:
 
 ### No Personal Information Collected
 
-WeatherVista does not collect, store, or transmit:
+SkyVista does not collect, store, or transmit:
 - Personal identification information (name, email, phone number)
 - Location data from your device
 - Contact information
@@ -31,7 +31,7 @@ WeatherVista does not collect, store, or transmit:
 
 ### Open-Meteo API
 
-WeatherVista uses the Open-Meteo (https://open-meteo.com/) to provide weather data. When you request weather information:
+SkyVista uses the Open-Meteo (https://open-meteo.com/) to provide weather data. When you request weather information:
 
 - We send only the latitude and longitude coordinates of the city you select
 - No personal information is sent to Open-Meteo
@@ -59,7 +59,7 @@ The user preferences stored locally are used solely to:
 
 **We do not share, sell, rent, or disclose your information to third parties.**
 
-WeatherVista does not:
+SkyVista does not:
 - Share data with advertisers
 - Sell data to data brokers
 - Use data for marketing purposes
@@ -67,7 +67,7 @@ WeatherVista does not:
 
 ## Children's Privacy
 
-WeatherVista is suitable for users of all ages. We do not knowingly collect personal information from children. Since we do not collect personal information, this is not applicable to our app.
+SkyVista is suitable for users of all ages. We do not knowingly collect personal information from children. Since we do not collect personal information, this is not applicable to our app.
 
 ## Changes to This Privacy Policy
 
@@ -95,7 +95,7 @@ Since we do not collect personal information, there is no personal data to acces
 If you have any questions about this Privacy Policy, please contact us at:
 
 **Email:** yasayllc@gmail.com  
-**App Name:** WeatherVista
+**App Name:** SkyVista
 
 ## Compliance
 
@@ -107,5 +107,5 @@ This Privacy Policy complies with:
 
 ---
 
-**Note:** This privacy policy is effective as of the date listed above and applies to all versions of the WeatherVista app.
+**Note:** This privacy policy is effective as of the date listed above and applies to all versions of the SkyVista app.
 
