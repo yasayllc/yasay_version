@@ -1,6 +1,6 @@
 # Privacy Policy for SkyVista
 
-**Last Updated:** January 2025
+**Last Updated:** December 20, 2025
 
 ## Introduction
 
@@ -8,87 +8,65 @@ SkyVista ("we," "our," or "us") is committed to protecting your privacy. This Pr
 
 ## Information We Collect
 
-### User Preferences (Stored Locally)
+### User Preferences & App Data (Stored Locally)
 
-SkyVista stores the following preferences locally on your device:
+SkyVista stores the following information locally on your device:
 
-- **Favorite Cities**: Cities you have marked as favorites
-- **Home City**: Your selected home city preference
-- **Temperature Unit**: Your preference for Celsius or Fahrenheit
+- **Favorite Cities**: Cities you have marked as favorites.
+- **Home City**: Your selected home city preference.
+- **Temperature Unit**: Your preference for Celsius or Fahrenheit.
+- **Credits & Unlocks**: Your current credit balance and simulation unlock status.
 
-**Important:** This information is stored only on your device using local storage (AsyncStorage). It is never transmitted to external servers or shared with third parties.
+**Important:** This information is stored primarily on your device using local storage (AsyncStorage). 
 
-### No Personal Information Collected
+### Location Data
 
-SkyVista does not collect, store, or transmit:
-- Personal identification information (name, email, phone number)
-- Location data from your device
-- Contact information
-- Payment information
-- Any other personally identifiable information
+When you use the app's location features, we may access your device's GPS location to provide local weather data. 
+- **Usage**: Your location is used solely to fetch weather data for your current area.
+- **Privacy**: We do not store your location history on our servers. Location data is processed locally and sent to weather providers only to retrieve relevant weather information.
+- **Third Parties**: We do not sell or share your location data with third parties or advertisers.
+
+### Subscription & Payment Data
+
+SkyVista offers optional "Pro" subscriptions and in-app purchases.
+- **Payment Processing**: All payments are processed securely by the **Apple App Store**. SkyVista does not collect or store your credit card numbers, bank account details, or other payment credentials.
+- **Subscription Management**: We use **RevenueCat** to manage subscription status and verify purchases. RevenueCat receives anonymized transaction identifiers to ensure your "Pro" features are active across your devices. No personally identifiable information (PII) is shared with RevenueCat by us.
 
 ## Third-Party Services
 
-### Open-Meteo API
+### Weather Data Providers
 
-SkyVista uses the Open-Meteo (https://open-meteo.com/) to provide weather data. When you request weather information:
+SkyVista uses **Open-Meteo** (https://open-meteo.com/) to provide real-time weather data. 
+- When you request weather information, we send only the latitude and longitude coordinates of the city to Open-Meteo.
+- No personal information is sent to or collected by Open-Meteo.
+- Weather data is fetched in real-time and is not stored by Open-Meteo in association with any user identifier.
 
-- We send only the latitude and longitude coordinates of the city you select
-- No personal information is sent to Open-Meteo
-- Open-Meteo does not collect or store personal data from our app
-- Weather data is fetched in real-time and not stored by Open-Meteo
+We also use **Geoapify** for city search and location services, which follows similar privacy-first principles.
+- Only the search queries you enter are sent to resolve location names.
+- No personal data or device identifiers are shared.
 
-**Open-Meteo Privacy:** Open-Meteo is a free, open-source weather API that does not require user registration or API keys. For more information about Open-Meteo's data practices, please visit their website.
+### RevenueCat
+Used for managing in-app subscriptions. RevenueCat helps us track which features you have unlocked without needing to know your identity.
 
-## How We Use Information
+### Apple
+Handles all financial transactions and payment data. Please refer to Apple's Privacy Policy for details on how they handle your payment information.
 
-The user preferences stored locally are used solely to:
-- Personalize your app experience
-- Remember your favorite cities
-- Display your preferred temperature unit
-- Show your home city first in the list
+## Data Usage and Sharing
 
-## Data Storage and Security
+**We do not share, sell, rent, or disclose your personal information to third parties for marketing or advertising purposes.**
 
-- All user preferences are stored locally on your device
-- No data is transmitted to external servers
-- No data is stored in cloud services
-- No user accounts or registration is required
-
-## Data Sharing
-
-**We do not share, sell, rent, or disclose your information to third parties.**
-
-SkyVista does not:
-- Share data with advertisers
-- Sell data to data brokers
-- Use data for marketing purposes
-- Transmit data to external servers (except for real-time weather API requests)
+The data we collect is used solely to:
+- Provide and maintain the App's functionality.
+- Process and verify your subscriptions.
+- Personalize your experience.
 
 ## Children's Privacy
 
-SkyVista is suitable for users of all ages. We do not knowingly collect personal information from children. Since we do not collect personal information, this is not applicable to our app.
+SkyVista is suitable for users of all ages. We do not knowingly collect personal information from children.
 
 ## Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time. We will notify you of any changes by:
-- Updating the "Last Updated" date at the top of this policy
-- Posting the new Privacy Policy in the App Store listing
-
-You are advised to review this Privacy Policy periodically for any changes.
-
-## Future Updates
-
-If we add new features in the future (such as advertising), we will:
-- Update this Privacy Policy to reflect any new data collection practices
-- Provide clear notice of any changes
-- Comply with all applicable privacy laws and regulations
-
-## Your Rights
-
-Since we do not collect personal information, there is no personal data to access, modify, or delete. However, you can:
-- Clear app data by uninstalling and reinstalling the app
-- Reset preferences within the app settings
+We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last Updated" date at the top of this policy and through the App Store listing.
 
 ## Contact Us
 
@@ -104,8 +82,3 @@ This Privacy Policy complies with:
 - General Data Protection Regulation (GDPR)
 - California Consumer Privacy Act (CCPA)
 - Other applicable privacy laws and regulations
-
----
-
-**Note:** This privacy policy is effective as of the date listed above and applies to all versions of the SkyVista app.
-
