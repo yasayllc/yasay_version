@@ -1,8 +1,8 @@
 {
     "ios": {
-      "minimumVersion": "1.0.0",
+      "minimumVersion": "1.0.2",
       "currentVersion": "1.0.1",
-      "updateUrl": "https://apps.apple.com/us/app/yasay/id6755253455",
+      "updateUrl": "https://apps.apple.com/us/app/skyvista/id6756197712",
       "forceUpdate": true,
       "updateMessage": "A new version is available with important features updates."
     },
