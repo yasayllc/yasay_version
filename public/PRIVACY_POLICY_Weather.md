@@ -1,6 +1,6 @@
 # Privacy Policy for SkyVista
 
-**Last Updated:** December 20, 2025
+**Last Updated:** December 23, 2025
 
 ## Introduction
 
@@ -28,9 +28,11 @@ When you use the app's location features, we may access your device's GPS locati
 
 ### Subscription & Payment Data
 
-SkyVista offers optional "Pro" subscriptions and in-app purchases.
+SkyVista offers optional "Pro" subscriptions (SkyVista Pro Annual and SkyVista Pro Monthly) for enhanced features.
+
 - **Payment Processing**: All payments are processed securely by the **Apple App Store**. SkyVista does not collect or store your credit card numbers, bank account details, or other payment credentials.
 - **Subscription Management**: We use **RevenueCat** to manage subscription status and verify purchases. RevenueCat receives anonymized transaction identifiers to ensure your "Pro" features are active across your devices. No personally identifiable information (PII) is shared with RevenueCat by us.
+- **Subscription Data Retention**: We retain anonymized subscription status information only for the duration necessary to provide you with Pro features. If you cancel your subscription, your status is updated at the end of your billing period.
 
 ## Third-Party Services
 
@@ -46,10 +48,10 @@ We also use **Geoapify** for city search and location services, which follows si
 - No personal data or device identifiers are shared.
 
 ### RevenueCat
-Used for managing in-app subscriptions. RevenueCat helps us track which features you have unlocked without needing to know your identity.
+Used for managing in-app subscriptions. RevenueCat helps us track which features you have unlocked without needing to know your identity. For more information, see RevenueCat's Privacy Policy at https://www.revenuecat.com/privacy.
 
 ### Apple
-Handles all financial transactions and payment data. Please refer to Apple's Privacy Policy for details on how they handle your payment information.
+Handles all financial transactions and payment data for subscriptions. Please refer to Apple's Privacy Policy for details on how they handle your payment information.
 
 ## Data Usage and Sharing
 

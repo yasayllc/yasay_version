@@ -1,6 +1,6 @@
 # Terms of Service for SkyVista
 
-**Last Updated:** December 20, 2025
+**Last Updated:** December 23, 2025
 
 ## 1. Acceptance of Terms
 
@@ -19,10 +19,27 @@ SkyVista provides weather visualization and simulation services. The App operate
 - **Local Storage**: Credits and unlock statuses are stored locally on your device. Uninstalling the App may result in the loss of these credits and unlocks unless backed up via system services.
 
 ### 3.2 Pro Subscriptions
-- **Features**: Pro users receive unlimited access to all weather simulations without the need for credits.
-- **Billing**: Subscriptions are processed through the **Apple App Store**. 
-- **Management**: You can manage or cancel your subscription at any time through your Apple ID Account Settings.
-- **Honor of Credits**: If you cancel a Pro subscription, your previously earned or purchased credit balance will be restored and honored.
+
+SkyVista offers the following auto-renewable subscription options:
+
+| Plan | Price | Duration | Free Trial |
+|------|-------|----------|------------|
+| **SkyVista Pro Annual** | $9.99 USD | 1 year | 3-day free trial |
+| **SkyVista Pro Monthly** | $1.99 USD | 1 month | None |
+
+**Features**: Pro subscribers receive unlimited access to all weather simulations across all cities without the need for credits, plus unlimited city exploration.
+
+**Payment**: Payment will be charged to your Apple ID account at confirmation of purchase. If you select a plan with a free trial, you will not be charged until the free trial period ends.
+
+**Auto-Renewal**: Your subscription will automatically renew unless you cancel it at least 24 hours before the end of the current billing period. Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period at the same price as your original subscription.
+
+**Free Trial**: The annual subscription includes a 3-day free trial. If you do not cancel before the trial ends, your subscription will automatically convert to a paid subscription and your account will be charged.
+
+**Managing & Canceling Subscriptions**: You can manage or cancel your subscription at any time through your Apple ID Account Settings. Go to Settings > [Your Name] > Subscriptions on your iOS device, or visit https://apps.apple.com/account/subscriptions.
+
+**Cancellation Policy**: If you cancel your subscription, you will continue to have access to Pro features until the end of your current billing period. No refunds will be provided for any unused portion of a subscription period.
+
+**Restoration of Credits**: If you cancel a Pro subscription, your previously earned credit balance will be restored and honored.
 
 ## 4. User Conduct
 
@@ -57,4 +74,3 @@ If you have any questions about these Terms, please contact us at:
 
 **Email:** yasayllc@gmail.com  
 **App Name:** SkyVista
-
