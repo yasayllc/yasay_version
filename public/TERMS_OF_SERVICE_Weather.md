@@ -14,7 +14,7 @@ SkyVista provides weather visualization and simulation services. The App operate
 
 ### 3.1 Credits and Unlocks
 - **Free Credits**: New users receive an initial balance of 10 credits.
-- **Daily Bonus**: Users receive 1 bonus credit every 24 hours. This bonus is "use it or lose it" and does not accumulate if not used on the day it is granted.
+- **Weekly Bonus**: Users receive 1 bonus credit every week (refreshes Monday at 12:00 AM midnight). This bonus is "use it or lose it" and does not accumulate if not used within the week.
 - **Unlocking Simulations**: 1 credit permanently unlocks the weather simulation feature for one specific city.
 - **Local Storage**: Credits and unlock statuses are stored locally on your device. Uninstalling the App may result in the loss of these credits and unlocks unless backed up via system services.
 
