@@ -1,6 +1,6 @@
 # Terms of Service for SkyVista
 
-**Last Updated:** December 23, 2025
+**Last Updated:** January 8, 2026
 
 ## 1. Acceptance of Terms
 
@@ -10,13 +10,22 @@ By downloading, installing, or using the SkyVista mobile application ("App"), yo
 
 SkyVista provides weather visualization and simulation services. The App operates on a freemium model with a credit-based system for unlocking advanced features (weather simulations) and optional paid subscriptions for unlimited access.
 
+### 2.1 Account Registration
+
+To access personalized features and sync your data across devices, you may create an account using **Sign in with Apple**. By creating an account, you agree to:
+- Provide accurate and complete information.
+- Maintain the security of your account credentials.
+- Notify us immediately of any unauthorized access to your account.
+
+Your account information (Apple ID user identifier, email, and name) is collected and used solely to provide you with a personalized experience. We do not share this information with third parties for advertising or marketing purposes.
+
 ## 3. Subscription and Credits
 
 ### 3.1 Credits and Unlocks
 - **Free Credits**: New users receive an initial balance of 10 credits.
-- **Weekly Bonus**: Users receive 1 bonus credit every week (refreshes Monday at 12:00 AM midnight). This bonus is "use it or lose it" and does not accumulate if not used within the week.
 - **Unlocking Simulations**: 1 credit permanently unlocks the weather simulation feature for one specific city.
-- **Local Storage**: Credits and unlock statuses are stored locally on your device. Uninstalling the App may result in the loss of these credits and unlocks unless backed up via system services.
+- **Account Sync**: When signed in with Apple ID, your credits and unlock statuses are synced across your devices.
+- **Local Storage**: If you choose not to sign in, credits and unlock statuses are stored only locally on your device. Uninstalling the App may result in the loss of these credits and unlocks.
 
 ### 3.2 Pro Subscriptions
 
@@ -54,7 +63,10 @@ The App, including its original content (excluding weather data from third parti
 
 ## 6. Third-Party Services
 
-SkyVista uses third-party services, including but not limited to **Open-Meteo**, **Geoapify**, and **RevenueCat**. Your use of the App is also subject to the privacy practices and terms of these providers as described in our Privacy Policy.
+SkyVista uses third-party services, including but not limited to **Sign in with Apple**, **Open-Meteo**, **Geoapify**, and **RevenueCat**. Your use of the App is also subject to the privacy practices and terms of these providers as described in our Privacy Policy.
+
+### 6.1 Sign in with Apple
+We use Apple's authentication service to provide secure account access and sync your preferences across devices. Apple provides us with a unique user identifier and optional email/name information. We use this information solely to personalize your experience and never share it with third parties for advertising or marketing.
 
 ## 7. Disclaimer of Warranties
 
@@ -64,11 +76,22 @@ The App is provided on an "AS IS" and "AS AVAILABLE" basis. While we strive to p
 
 In no event shall SkyVista, its directors, or employees be liable for any indirect, incidental, special, or consequential damages arising out of your use of the App.
 
-## 9. Changes to Terms
+## 9. Account Termination and Data Deletion
+
+### 9.1 Your Right to Terminate
+You may delete your account at any time through the App's settings or by contacting us at yasayllc@gmail.com. Upon account deletion:
+- All personal data associated with your account will be permanently removed from our servers within 30 days.
+- Your subscription (if active) will remain active until the end of the current billing period.
+- Local data on your device will persist until you uninstall the App or clear app data.
+
+### 9.2 Our Right to Terminate
+We reserve the right to suspend or terminate your account if you violate these Terms or engage in fraudulent activity.
+
+## 10. Changes to Terms
 
 We reserve the right to modify or replace these Terms at any time. We will provide notice of any changes by updating the "Last Updated" date at the top of these Terms.
 
-## 10. Contact Us
+## 11. Contact Us
 
 If you have any questions about these Terms, please contact us at:
 
